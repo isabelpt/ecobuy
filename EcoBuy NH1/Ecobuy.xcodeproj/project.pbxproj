@@ -14,6 +14,11 @@
 		CE1F7C8524E311B3003CE57D /* Ecobuy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE1F7C8324E311B3003CE57D /* Ecobuy.xcdatamodeld */; };
 		CE1F7C8724E311B6003CE57D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE1F7C8624E311B6003CE57D /* Assets.xcassets */; };
 		CE1F7C8A24E311B6003CE57D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1F7C8824E311B6003CE57D /* LaunchScreen.storyboard */; };
+		EF87633C24E4364E0026D65B /* ClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87633B24E4364E0026D65B /* ClothingViewController.swift */; };
+		EF87633E24E436960026D65B /* EverlaneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87633D24E436960026D65B /* EverlaneViewController.swift */; };
+		EF87634024E436B90026D65B /* AllbirdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87633F24E436B90026D65B /* AllbirdsViewController.swift */; };
+		EF87634224E436E10026D65B /* PactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87634124E436E10026D65B /* PactViewController.swift */; };
+		EF87634424E4371C0026D65B /* EcoVibeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF87634324E4371C0026D65B /* EcoVibeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		CE1F7C8624E311B6003CE57D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE1F7C8924E311B6003CE57D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE1F7C8B24E311B6003CE57D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF87633B24E4364E0026D65B /* ClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingViewController.swift; sourceTree = "<group>"; };
+		EF87633D24E436960026D65B /* EverlaneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EverlaneViewController.swift; sourceTree = "<group>"; };
+		EF87633F24E436B90026D65B /* AllbirdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllbirdsViewController.swift; sourceTree = "<group>"; };
+		EF87634124E436E10026D65B /* PactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PactViewController.swift; sourceTree = "<group>"; };
+		EF87634324E4371C0026D65B /* EcoVibeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcoVibeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,11 @@
 				CE1F7C7C24E311B3003CE57D /* SceneDelegate.swift */,
 				CE1F7C7E24E311B3003CE57D /* ViewController.swift */,
 				CE1F7C8024E311B3003CE57D /* Main.storyboard */,
+				EF87634324E4371C0026D65B /* EcoVibeViewController.swift */,
+				EF87634124E436E10026D65B /* PactViewController.swift */,
+				EF87633F24E436B90026D65B /* AllbirdsViewController.swift */,
+				EF87633D24E436960026D65B /* EverlaneViewController.swift */,
+				EF87633B24E4364E0026D65B /* ClothingViewController.swift */,
 				CE1F7C8624E311B6003CE57D /* Assets.xcassets */,
 				CE1F7C8824E311B6003CE57D /* LaunchScreen.storyboard */,
 				CE1F7C8B24E311B6003CE57D /* Info.plist */,
@@ -141,9 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF87634024E436B90026D65B /* AllbirdsViewController.swift in Sources */,
 				CE1F7C7F24E311B3003CE57D /* ViewController.swift in Sources */,
+				EF87634224E436E10026D65B /* PactViewController.swift in Sources */,
 				CE1F7C7B24E311B3003CE57D /* AppDelegate.swift in Sources */,
+				EF87633E24E436960026D65B /* EverlaneViewController.swift in Sources */,
 				CE1F7C8524E311B3003CE57D /* Ecobuy.xcdatamodeld in Sources */,
+				EF87633C24E4364E0026D65B /* ClothingViewController.swift in Sources */,
+				EF87634424E4371C0026D65B /* EcoVibeViewController.swift in Sources */,
 				CE1F7C7D24E311B3003CE57D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -126,10 +126,10 @@ to popular products.</string>
             </objects>
             <point key="canvasLocation" x="639.13043478260875" y="92.410714285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Clothing View Controller-->
         <scene sceneID="hR8-BY-PQa">
             <objects>
-                <viewController id="9nR-GU-8J9" sceneMemberID="viewController">
+                <viewController id="9nR-GU-8J9" customClass="ClothingViewController" customModule="Ecobuy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ngg-kh-4mQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,6 +166,15 @@ to popular products.</string>
                                     <segue destination="Cq0-Nm-lGA" kind="show" id="zL1-hl-pBU"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cub-qV-D1r">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Clothing" id="DVN-nW-IUy">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="y5y-ga-Zeo"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.52417856240000005" green="0.78538507219999998" blue="0.45608510889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="zV7-71-daf"/>
@@ -176,10 +185,10 @@ to popular products.</string>
             </objects>
             <point key="canvasLocation" x="1340.5797101449277" y="91.741071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Everlane View Controller-->
         <scene sceneID="yQP-By-t4n">
             <objects>
-                <viewController id="dsF-Ud-ImP" sceneMemberID="viewController">
+                <viewController id="dsF-Ud-ImP" customClass="EverlaneViewController" customModule="Ecobuy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UMH-a5-zFI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -222,6 +231,24 @@ apple apple apple apple apple apple apple apple apple apple</string>
                                 <rect key="frame" x="54" y="472" width="146" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wPf-xy-UUY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Clothing" id="qPH-oI-fkd">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="X4e-Ua-okY"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9U-XE-cla">
+                                <rect key="frame" x="144" y="429" width="126" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go To Website"/>
+                                <connections>
+                                    <action selector="GoToEverlane:" destination="dsF-Ud-ImP" eventType="touchUpInside" id="7Nw-1N-Bfi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52417856240000005" green="0.78538507219999998" blue="0.45608510889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="axG-az-uSo"/>
@@ -232,10 +259,10 @@ apple apple apple apple apple apple apple apple apple apple</string>
             </objects>
             <point key="canvasLocation" x="2018.840579710145" y="442.63392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Allbirds View Controller-->
         <scene sceneID="4af-a1-QNe">
             <objects>
-                <viewController id="Rwt-lb-Hng" sceneMemberID="viewController">
+                <viewController id="Rwt-lb-Hng" customClass="AllbirdsViewController" customModule="Ecobuy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tbZ-vS-gkg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,20 +271,16 @@ apple apple apple apple apple apple apple apple apple apple</string>
                                 <rect key="frame" x="54" y="76" width="307" height="194"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nd-64-tR8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About: Albirds has sustainable sneakers and other shoes. Thay also use all natural materials." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nd-64-tR8">
                                 <rect key="frame" x="54" y="278" width="307" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">About: apple apple apple apple apple 
-apple apple apple apple apple apple apple apple</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JJ-aB-V59">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alternative to: nike, adidas, any shoe brands" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JJ-aB-V59">
                                 <rect key="frame" x="54" y="342" width="307" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Alternative to: apple apple apple
-apple apple apple apple apple apple apple apple apple apple</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -278,6 +301,31 @@ apple apple apple apple apple apple apple apple apple apple</string>
                                 <rect key="frame" x="54" y="608" width="146" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sPm-ml-OGD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Clothing" id="HcZ-qk-JQy">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="CwC-7s-O5N"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2d-te-Gky">
+                                <rect key="frame" x="186" y="435" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3L3-uj-Ip9">
+                                <rect key="frame" x="144" y="434" width="126" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go To Website"/>
+                                <connections>
+                                    <action selector="goToAllbirds:" destination="Rwt-lb-Hng" eventType="touchUpInside" id="FDa-EP-Xxx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52417856240000005" green="0.78538507219999998" blue="0.45608510889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="IvO-Uh-iwc"/>
@@ -288,10 +336,10 @@ apple apple apple apple apple apple apple apple apple apple</string>
             </objects>
             <point key="canvasLocation" x="2018.840579710145" y="-226.33928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Eco Vibe View Controller-->
         <scene sceneID="9nz-ei-A2c">
             <objects>
-                <viewController id="Cq0-Nm-lGA" sceneMemberID="viewController">
+                <viewController id="Cq0-Nm-lGA" customClass="EcoVibeViewController" customModule="Ecobuy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LAY-Hi-Rkd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,6 +382,24 @@ apple apple apple apple apple apple apple apple apple apple</string>
                                 <rect key="frame" x="154" y="441" width="202" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vt0-A1-auu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Clothing" id="cXs-6Q-lWN">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="Obw-VE-Po5"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FqB-sA-ZV4">
+                                <rect key="frame" x="144" y="424" width="126" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go To Website"/>
+                                <connections>
+                                    <action selector="GoToEcoVibe:" destination="Cq0-Nm-lGA" eventType="touchUpInside" id="OGj-Ka-FQg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52417856240000005" green="0.78538507219999998" blue="0.45608510889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="gvh-M0-cwr"/>
@@ -344,11 +410,10 @@ apple apple apple apple apple apple apple apple apple apple</string>
             </objects>
             <point key="canvasLocation" x="2740.579710144928" y="-226.33928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Pact View Controller-->
         <scene sceneID="qkB-lF-qk7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aNl-Nk-sSK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="mGa-Ey-6Kt" sceneMemberID="viewController">
+                <viewController id="mGa-Ey-6Kt" customClass="PactViewController" customModule="Ecobuy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TFv-4P-YLf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -391,12 +456,31 @@ apple apple apple apple apple apple apple apple apple apple</string>
                                 <rect key="frame" x="172" y="453" width="189" height="239"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iZ7-Aa-CfJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Clothing" id="xV3-fU-n7W">
+                                        <barButtonItem key="leftBarButtonItem" title="back" id="TtF-WW-QAq"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vt-2o-9R1">
+                                <rect key="frame" x="144" y="441" width="126" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go To Website"/>
+                                <connections>
+                                    <action selector="GoToPact:" destination="mGa-Ey-6Kt" eventType="touchUpInside" id="tdk-dT-TrY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52417856240000005" green="0.78538507219999998" blue="0.45608510889999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="i6r-KP-X41"/>
                     </view>
                     <navigationItem key="navigationItem" id="GsG-9o-uTy"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aNl-Nk-sSK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2740.579710144928" y="442.63392857142856"/>
         </scene>
